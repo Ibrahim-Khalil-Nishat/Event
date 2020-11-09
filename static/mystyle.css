@@ -1,0 +1,245 @@
+.image { background: #490D40;
+     background: url("static/images/1.jpg") ;
+    }
+ body{
+    background-color:blueviolet;
+    
+}
+.main{
+    float: right
+
+
+}
+
+.nav {
+    background-color: yellow;
+    list-style-type: none;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+  }
+  
+.main ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    color:blue
+ 
+  }
+.div-clear{
+    clear: both;
+}
+.main ul li :hover a {
+    background: rgb(226, 27, 27);
+    padding:5px;
+    position: fixed;
+}
+.title h1{
+    text-align: center;
+    /* padding:20px; */
+    padding-bottom: 15px;
+   
+    margin-top:200px;
+    height:50px;border:4px solid black;
+    font-size: 300%;
+    color: blueviolet;
+    
+}
+.maintitle h1{
+    text-align: center;
+    padding:100;
+    margin-top:300px;
+    margin-left: 400px;
+    margin-right: 400px;
+    height:50px;border:3px solid black;
+    font-size: 250%;
+    color: cyan;
+    
+}
+.footer{
+    margin:50px;
+}
+.wedding{
+    text-align:center;
+}
+.main ul li:hover ul li{
+    display:block
+}
+.corporate{
+    text-align: center;
+    
+}
+.corporate h1{
+    color:mediumspringgreen
+}
+.detailscorporate{
+    text-align: center;
+}
+
+.detailscorporate h1{
+    color:rgb(226, 27, 27)
+}
+.wedding{
+    width:1000px;height:100px;border:3px solid rgb(212, 60, 60); 
+    text-align: center; 
+    margin-left: 150px;
+  }
+
+  .wedding h1{
+      color:mediumblue
+  }
+  .package1{
+    width:1350px;height:160px;border:3px solid  rgb(101, 13, 201);
+    margin-right:15px
+
+  }
+  
+  .package1 h1{
+      text-align: center;
+      color:red
+  }
+    
+  .package1 li{
+    margin-left: 20px;
+    font-style: oblique;
+    font-size: medium;
+    color:black
+}
+
+.regi{
+    text-align: center;
+
+}
+.dcorporate{
+    padding:20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    background:red;
+    border-style: solid;
+    border-color:black;
+    border-width: 3px 2px 3px 2px;
+}
+.dbirthday{
+    padding:20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    background:gray;
+    border-style: dotted;
+    border-color:black;
+    border-width: 3px 2px 3px 2px;
+
+
+}
+.regibirthday h3{
+color:red
+
+}
+#register{
+    color:blue
+}
+.dregister{
+    padding:30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    background:blue ;
+
+}
+.dwedding{
+    padding:30px;
+    margin-left: 100px;
+    text-align: center;
+}
+.dlogin{
+    padding:10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    background-color:cyan;
+
+
+}
+
+.wholepage{
+    width: 900px;
+    height:300px;
+    margin-right: auto;
+
+}
+
+   .container{
+      padding-bottom: 3px;
+      display:flex;
+      /* width:50% */
+  } 
+  .container >div{
+      width:50%;
+  }
+  .card {
+    /* flex: 50%; */
+    /* margin: 1rem ;  */
+    padding:5px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    /* grid-template-rows: auto */
+    grid-gap: 1.5rem; 
+  }
+  
+ .gallery__img {
+    width: 50%;
+    height: 30%;
+    /* grid-template-columns: auto auto auto ; */
+    /* object-fit: cover;
+    display: block;  */
+  } 
+  .img-fluid{
+    
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  }
+  *{
+      box-sizing: border-box;
+  }
+  .clm{
+      float:left;
+      width:33.3%;
+      padding:3px;
+  
+  }
+  .clm img{
+      height:200px;
+      margin-left: 10px;
+  }
+  /* .clm img p{
+    margin-left: 20px;
+  }
+   */
+  /* .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+ */
+
+
+#previous a {
+    text-decoration: none;
+    padding:5px;
+    background-color:rgb(34, 30, 37)
+}
+
+#bg{
+    background-size: 1400px 700px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.message p{
+    background-color: #fff;
+}
+

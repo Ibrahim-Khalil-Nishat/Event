@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}"> 
+</head>
+<body id="bg" style="background-image: url('{% static "images/5.jpg"%}')" >
+    <form method='POST' action="addregi" class='dregister'>
+        {% csrf_token%}
+        <lavel><strong>Name:</strong></lavel>
+        <div>{{form.name}}</div>
+        <lavel><strong>Phone Number:</strong></lavel>
+        <div>{{form.number}}</div>
+        <lavel><strong>Username:</strong></lavel>
+        <div>{{form.username}}</div>
+        <lavel><strong>Email:</strong></lavel>
+        <div>{{form.email}}</div>
+        <lavel><strong>password:</strong></lavel>
+        <div>{{form.password}}</div>
+        
+        <div>
+        <button type='submit'>Register</button>
+        {% for message in messages%}
+        <p style="color: red">{{message}}</p>
+        {% endfor%}
+        </div>
+      
+    </form>
+  
+</body>
+</html>

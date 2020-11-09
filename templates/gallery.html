@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+    {% block title %}Gallery{% endblock %}
+    {% load static %}
+    
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">   -->
+{% block content%}
+    <div class='divform'>
+    <form action="handlespecialupload" method='POST' enctype="multipart/form-data"class='wholepage'> 
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type='submit' value='submit'>
+    </form>
+</div>
+</hr>
+
+
+
+ {% for u in uploads %}
+ <div class="container" >
+   <div class='row-sm-3'>
+     <div class="col-sm-3">
+      <div class="card" style="width: 18rem; ">
+        <img class="card-img-top" src='{{u.image.url}}'alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{u.name}} </h5>
+          <!-- <p><strong>{{u.name}} </strong></p> -->
+          <a href="#" class="btn btn-primary">Full Preview</a>
+        </div>
+      </div>
+    </div>
+
+     </div>
+   </div>
+
+  {% endfor %} 
+
+    <!-- {% for u in uploads %}
+	<div class="row">
+        <div class="clm">
+
+	
+            <img src='{{u.image.url}}'alt="gallery" style="width: 100%;">
+            <div>
+            <p><strong>{{u.name}} </strong></p>
+        </div>
+   
+		</div>
+	</div>
+	{% endfor %} -->
+{% endblock %}

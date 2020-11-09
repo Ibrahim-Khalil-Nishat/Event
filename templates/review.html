@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}"> 
+</head>
+<body>
+    <div >
+    <form method='POST' action="addddd" class='dcorporate'>
+        {% csrf_token %}
+        <lavel>Review</lavel>
+        <div>{{form.details}}</div>
+        
+        <div>
+        <button type='submit'>POST</button>
+        <div id='previous'>
+        <a href='show'>Previous Review</a>
+    </div>
+        </div>
+
+    </form></div>
+  
+    <br>
+    <table>
+
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate register</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}"> 
+</head>
+<body id="bg" style="background-image: url('{% static "images/17.jpg"%}')">
+    <div >
+    <form method='POST' action="adddd" class='dbirthday'>
+        {% csrf_token %}
+        <lavel><strong>Name:</strong></lavel>
+        <div>{{form.name}}</div>
+        <lavel><strong>Booking_Details:</strong></lavel>
+        <div>{{form.Details}}</div>
+        <lavel><strong>Date:</strong></lavel>
+        <div>{{form.date}}</div>
+        <lavel><strong>Address:</strong></lavel>
+        <div>{{form.address}}</div>
+        <lavel><strong>Contact:</strong></lavel>
+        <div>{{form.contact}}</div>
+         <lavel><strong>Email:</strong></lavel>
+        <div>{{form.Email}}</div>
+        
+        <div>
+        <button type='submit'>Register</button>
+        </div>
+   
+
+
+
+
+    </form>
+</div>
+</body>
+</html>

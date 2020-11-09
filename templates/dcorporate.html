@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate register</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}"> 
+</head>
+<body id="bg" style="background-image: url('{% static "images/4.jpg"%}')">
+    <div >
+    <form method='POST' action="add" class='dcorporate'>
+        {% csrf_token %}
+        <lavel>Name</lavel>
+        <div>{{form.name}}</div>
+        <lavel>Booking_Details</lavel>
+        <div>{{form.Details}}</div>
+        <lavel>Date</lavel>
+        <div>{{form.date}}</div>
+        <lavel>Address</lavel>
+        <div>{{form.address}}</div>
+        <lavel>Contact</lavel>
+        <div>{{form.contact}}</div>
+         <lavel>Email</lavel>
+        <div>{{form.Email}}</div>
+        <br>
+        
+        <div>
+        <button type='submit'>Register</button>
+        </div>
+   
+
+
+
+
+    </form>
+</div>
+<div bgcolor='red'>
+    {% for message in messages%}
+    <b>{{message}}</b>
+    {% endfor%}
+
+
+</div>
+</body>
+</html>
